@@ -1,0 +1,28 @@
+#dan{
+    grid-area: b1;
+}
+#jon{
+    grid-area: b2;
+}
+#jen{
+    grid-area: b3;
+}
+#pat{
+    grid-area: b4;
+}
+#kir{
+    grid-area: b5;
+}
+@media only screen and (min-width:750px){
+    main{
+        display: grid;
+        column-gap: 1.5rem;
+        grid-template-areas: "b1 b1 b1 b2 b5"
+                             "b3 b4 b4 b4 b5"   ;
+        padding: 5rem 5rem;                     
+    }
+
+    #kir{
+        max-width:16rem;
+    }
+}
